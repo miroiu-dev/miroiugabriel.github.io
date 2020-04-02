@@ -1,0 +1,49 @@
+.fa-shopify {
+  font-size: 50px;
+  padding-right: 15px;
+}
+.title{
+  font-weight: bold;
+  color: #000639;
+  white-space: nowrap;
+  margin: 20px 0;
+}
+
+.jumbotron {
+  margin: auto 0;
+}
+
+.par{
+  padding-top: 20px;
+  font-size: 12px;
+  max-width: 400px;
+}
+.section{
+  margin: 30px;
+}
+.center {
+  margin: 0 auto;
+}
+.text-style{
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.carousel-item {
+  max-height: 400px;
+}
+
+.carousel {
+  max-width: 1000px;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.img-position{
+  text-align: center;
+}
+.fontsize{
+  font-size: medium;
+}
