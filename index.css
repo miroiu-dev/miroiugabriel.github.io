@@ -69,6 +69,7 @@ nav {
 #home {
 	padding: 10px;
 	padding-top: 15rem;
+	scroll-margin-top: 4em;
 }
 
 .home-top {
@@ -465,9 +466,11 @@ footer {
 	background-color: #5850ec;
 	cursor: pointer;
 }
+
 .footer-copyright-container {
 	margin-top: 5rem;
 }
+
 .footer-copyright {
 	color: #fff;
 	width: fit-content;
@@ -476,23 +479,28 @@ footer {
 	opacity: 0.7;
 	font-weight: 400;
 }
+
 .contact-logo .social {
 	display: flex;
 	justify-content: space-evenly;
 	width: 100%;
 	margin-bottom: 1.5rem;
 }
+
 @media only screen and (max-width: 1270px) {
 	.footer-content {
 		grid-template-columns: 1fr;
 	}
+
 	.contact-fill {
 		margin: 2rem auto;
 		min-width: 600px;
 	}
+
 	.contact-logo {
 		flex-direction: column;
 	}
+
 	.contact-logo-svg {
 		margin-left: 0;
 	}
@@ -500,24 +508,46 @@ footer {
 
 @media only screen and (max-width: 720px) {
 	#home {
-		margin-top: 3rem;
+		padding-top: 1rem;
 	}
+	#about {
+		padding-top: 1rem;
+	}
+	.box-title.front {
+		border-top-right-radius: 14px;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+	}
+	.box-title.back {
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		border-top-right-radius: 14px;
+		border-top-left-radius: 14px;
+	}
+	.box-skills.back {
+		border-bottom-left-radius: 14px;
+	}
+
 	.projects-bottom {
 		display: none;
 	}
+
 	.skills-box {
 		grid-template-columns: 1fr;
+		gap: 1rem;
 	}
+
 	.contact-fill {
 		min-width: 0;
 		width: 100%;
 	}
+
 	.contact-logo-svg {
 		margin-left: 1rem;
 	}
+
 	.navbar {
 		display: none;
 	}
+
 	.form-content {
 		padding: 0.7rem 1.5rem;
 	}
