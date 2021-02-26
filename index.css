@@ -508,7 +508,7 @@ footer {
 
 @media only screen and (max-width: 720px) {
 	#home {
-		padding-top: 1rem;
+		padding-top: 1.3rem;
 	}
 	#about {
 		padding-top: 1rem;
