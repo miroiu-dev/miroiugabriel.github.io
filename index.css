@@ -300,10 +300,62 @@ nav {
 }
 
 .projects-content {
+	position: relative;
 	max-width: 720px;
 }
 
 .image {
+	display: block;
 	width: 100%;
+	height: auto;
 	border-radius: 7px;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: 0.5s ease;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 7px;
+}
+
+.projects-content:hover .overlay {
+	background-color: rgba(0, 0, 0, 0.7);
+	opacity: 1;
+}
+
+.overlay button {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: 600;
+	padding: 1rem;
+	border-radius: 14px;
+	outline: none;
+	background: transparent;
+	border: 1px solid #5850ec;
+	cursor: pointer;
+	transition: background 0.5s;
+	margin-bottom: 8rem;
+}
+
+.overlay button:hover {
+	background-color: #5850ec;
+}
+.overlay h1 {
+	color: white;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	letter-spacing: 0.2rem;
+	color: #5850ec;
+	margin-top: 8rem;
 }
