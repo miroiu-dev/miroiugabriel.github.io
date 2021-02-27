@@ -64,11 +64,10 @@ nav {
 	color: #7510f7 !important;
 }
 
-/* se  calculeaza scroll top de navbarwidht - cat margin-top are  */
-
 #home {
 	padding: 10px;
 	padding-top: 15rem;
+	/* se  calculeaza scroll top de navbarwidth - cat margin-top are  */
 	scroll-margin-top: 4em;
 }
 
@@ -105,6 +104,10 @@ nav {
 	cursor: pointer;
 }
 
+.about-btn:hover {
+	background-color: rgb(88, 80, 236, 0.9);
+}
+
 .home-title {
 	display: block;
 	letter-spacing: -0.025rem;
@@ -126,9 +129,42 @@ nav {
 }
 
 .home-subtitle {
+	position: relative;
+	top: 50%;
+
+	width: 24rem;
+	margin: 0 auto;
+	border-right: 2px solid rgba(255, 255, 255, 0.75);
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
 	letter-spacing: -0.025em;
 	color: rgba(22, 30, 46, 1);
 	font-size: 2.5rem;
+	transform: translateY(-50%);
+	visibility: hidden;
+}
+
+.anim-typewriter {
+	animation: typewriter 2.5s steps(44) 0.5s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter {
+	from {
+		width: 0;
+		visibility: hidden;
+	}
+	to {
+		width: 24rem;
+		visibility: visible;
+	}
+}
+@keyframes blinkTextCursor {
+	from {
+		border-right-color: rgba(88, 80, 236, 0.75);
+	}
+	to {
+		border-right-color: transparent;
+	}
 }
 
 #about {
@@ -157,13 +193,15 @@ nav {
 
 .about-middle {
 	max-width: 277px;
-	margin: 6rem auto;
+	margin: 0 auto;
+	margin-bottom: -6rem;
 }
 
 .description-box {
 	background-color: #5850ec;
 	text-align: center;
 	padding: 1rem;
+	padding-top: 7rem;
 	padding-bottom: 7rem;
 }
 
@@ -243,7 +281,9 @@ nav {
 	width: 100%;
 	justify-content: center;
 }
-
+.skill-title {
+	visibility: hidden;
+}
 #projects {
 	padding: 10px;
 	padding-top: 10rem;
@@ -288,6 +328,7 @@ nav {
 .projects-content {
 	position: relative;
 	max-width: 720px;
+	visibility: hidden;
 }
 
 .image {
@@ -345,6 +386,9 @@ nav {
 	letter-spacing: 0.2rem;
 	color: #5850ec;
 	margin-top: 8rem;
+}
+.splide {
+	display: none;
 }
 
 .wave-svg {
@@ -466,7 +510,9 @@ footer {
 	background-color: #5850ec;
 	cursor: pointer;
 }
-
+.form-submit-btn:hover {
+	background-color: rgb(88, 80, 236, 0.9);
+}
 .footer-copyright-container {
 	margin-top: 5rem;
 }
@@ -486,12 +532,53 @@ footer {
 	width: 100%;
 	margin-bottom: 1.5rem;
 }
+.contact-logo-svg {
+	transition: transform 1s;
+}
+.contact-logo-svg:hover {
+	transform: scale(1.3);
+}
+
+.reveal {
+	animation: top-bottom 0.5s ease-in-out forwards;
+}
+
+@keyframes top-bottom {
+	from {
+		visibility: hidden;
+		transform: scale(0);
+	}
+	to {
+		visibility: visible;
+		transform: scale(1);
+	}
+}
+
+@keyframes in-out {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 
 @media only screen and (max-width: 1270px) {
+	.projects-bottom {
+		display: none;
+	}
 	.footer-content {
 		grid-template-columns: 1fr;
 	}
 
+	.splide {
+		display: block;
+		margin-top: 10rem;
+	}
+	.projects-content {
+		max-width: 1440px;
+		margin: 0 auto;
+	}
 	.contact-fill {
 		margin: 2rem auto;
 		min-width: 600px;
@@ -513,6 +600,7 @@ footer {
 	#about {
 		padding-top: 1rem;
 	}
+
 	.box-title.front {
 		border-top-right-radius: 14px;
 		border: 1px solid rgba(0, 0, 0, 0.1);
@@ -524,10 +612,6 @@ footer {
 	}
 	.box-skills.back {
 		border-bottom-left-radius: 14px;
-	}
-
-	.projects-bottom {
-		display: none;
 	}
 
 	.skills-box {
@@ -550,5 +634,48 @@ footer {
 
 	.form-content {
 		padding: 0.7rem 1.5rem;
+	}
+}
+@media only screen and (max-width: 390px) {
+	.home-subtitle {
+		width: 19.5rem;
+		font-size: 2rem;
+	}
+	.overlay h1 {
+		font-size: 1.8rem;
+	}
+	.anim-typewriter {
+		animation: typewriter 2.5s steps(44) 0.5s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+	}
+	@keyframes typewriter {
+		from {
+			width: 0;
+		}
+		to {
+			width: 19.5rem;
+		}
+	}
+}
+@media only screen and (min-width: 2360px) {
+	#home {
+		padding-top: 25rem;
+		padding-bottom: 10rem;
+	}
+	.home-title {
+		font-size: 6.5rem;
+	}
+	.home-subtitle {
+		font-size: 4rem;
+		width: 28rem;
+	}
+	@keyframes typewriter {
+		from {
+			width: 0;
+			visibility: hidden;
+		}
+		to {
+			width: 40rem;
+			visibility: visible;
+		}
 	}
 }

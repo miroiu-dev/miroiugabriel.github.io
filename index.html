@@ -6,9 +6,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Miroiu Gabriel | Portofolio</title>
 		<link rel="stylesheet" href="/index.css" />
+		<link rel="stylesheet" href="/useful/splide.min.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 		<script src="index.js" defer></script>
+		<script src="/useful/splide.min.js" defer></script>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				new Splide('.splide').mount();
+			});
+		</script>
 	</head>
 	<body>
 		<nav class="navbar" role="navigation" aria-label="main navigation">
@@ -39,10 +47,10 @@
 		</section>
 		<section id="about">
 			<div class="about-top-middle">
-				<div class="about-top">
+				<!-- <div class="about-top">
 					<h1 class="about-title">Designer, Front-end Developer & Mentor</h1>
 					<h2 class="about-subtitle">I design and code beautifully simple things, and I love what I do.</h2>
-				</div>
+				</div> -->
 				<div class="about-middle">
 					<img src="svg/me.svg" />
 				</div>
@@ -69,7 +77,7 @@
 										<img src="/svg/react.svg" />
 									</div>
 									<div class="skill-title">
-										<h2>REACT</h2>
+										<h2>React</h2>
 									</div>
 								</div>
 								<div class="box-content">
@@ -77,7 +85,7 @@
 										<img src="svg/react_native.svg" />
 									</div>
 									<div class="skill-title">
-										<h2>REACT NATIVE</h2>
+										<h2>React Native</h2>
 									</div>
 								</div>
 								<div class="box-content">
@@ -85,7 +93,7 @@
 										<img src="svg/typescript.svg" />
 									</div>
 									<div class="skill-title">
-										<h2>TYPESCRIPT</h2>
+										<h2>Typescript</h2>
 									</div>
 								</div>
 								<div class="box-content">
@@ -93,7 +101,7 @@
 										<img src="svg/javascript.svg" />
 									</div>
 									<div class="skill-title">
-										<h2>JAVASCRIPT</h2>
+										<h2>Javascript</h2>
 									</div>
 								</div>
 								<div class="box-content">
@@ -124,7 +132,7 @@
 										<img src="svg/sql.svg" />
 									</div>
 									<div class="skill-title">
-										<h2>SQL SERVER</h2>
+										<h2>SQL Server</h2>
 									</div>
 								</div>
 								<div class="box-content">
@@ -132,7 +140,7 @@
 										<img src="svg/discordjs.svg" />
 									</div>
 									<div class="skill-title">
-										<h2>DISCORD.JS</h2>
+										<h2>Discord.js</h2>
 									</div>
 								</div>
 								<div class="box-content">
@@ -140,7 +148,7 @@
 										<img src="svg/nodejs.svg" />
 									</div>
 									<div class="skill-title">
-										<h2>NODE.JS</h2>
+										<h2>Node.js</h2>
 									</div>
 								</div>
 								<div class="box-content">
@@ -148,7 +156,7 @@
 										<img src="svg/express.svg" />
 									</div>
 									<div class="skill-title">
-										<h2>EXPRESS.JS</h2>
+										<h2>Express.js</h2>
 									</div>
 								</div>
 
@@ -187,14 +195,14 @@
 			<div class="projects-bottom">
 				<div class="projects-container">
 					<div class="projects-content">
-						<img class="image" src="image/facebook-clone.png" />
+						<img class="image" src="image/facebook-clone.webp" />
 						<div class="overlay">
 							<h1>FACEBOOK CLONE</h1>
 							<button>IN PROGRESS</button>
 						</div>
 					</div>
 					<div class="projects-content">
-						<img class="image" src="image/tournaments.png" />
+						<img class="image" src="image/tournaments.webp" />
 						<div class="overlay">
 							<h1>TOURNAMENTS</h1>
 							<button>IN PROGRESS</button>
@@ -202,7 +210,7 @@
 					</div>
 
 					<div class="projects-content">
-						<img class="image" src="image/todo.png" />
+						<img class="image" src="image/todo.webp" />
 						<div class="overlay">
 							<h1>TASK MANAGER</h1>
 							<a href="https://miroiugabriel.github.io/todo-app/" target="_blank"
@@ -211,7 +219,7 @@
 						</div>
 					</div>
 					<div class="projects-content">
-						<img class="image" src="image/colors.png" />
+						<img class="image" src="image/colors.webp" />
 						<div class="overlay">
 							<h1>COLOR PICKER</h1>
 							<a href="https://miroiugabriel.github.io/colors-app/" target="_blank"
@@ -219,6 +227,52 @@
 							>
 						</div>
 					</div>
+				</div>
+			</div>
+			<div class="splide">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide">
+							<div class="projects-content">
+								<img class="image" src="image/facebook-clone.webp" />
+								<div class="overlay">
+									<h1>FACEBOOK CLONE</h1>
+									<button>IN PROGRESS</button>
+								</div>
+							</div>
+						</li>
+						<li class="splide__slide">
+							<div class="projects-content">
+								<img class="image" src="image/tournaments.webp" />
+								<div class="overlay">
+									<h1>TOURNAMENTS</h1>
+									<button>IN PROGRESS</button>
+								</div>
+							</div>
+						</li>
+						<li class="splide__slide">
+							<div class="projects-content">
+								<img class="image" src="image/todo.webp" />
+								<div class="overlay">
+									<h1>TASK MANAGER</h1>
+									<a href="https://miroiugabriel.github.io/todo-app/" target="_blank"
+										><button>VISIT</button></a
+									>
+								</div>
+							</div>
+						</li>
+						<li class="splide__slide">
+							<div class="projects-content">
+								<img class="image" src="image/colors.webp" />
+								<div class="overlay">
+									<h1>COLOR PICKER</h1>
+									<a href="https://miroiugabriel.github.io/colors-app/" target="_blank"
+										><button>VISIT</button></a
+									>
+								</div>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</section>
@@ -243,18 +297,24 @@
 						<div class="contact-fill-title">
 							<h1 class="form-title">Get in touch</h1>
 						</div>
-						<form>
+						<form class="contact-form">
 							<div class="form-content">
 								<label class="contact-label">Name</label>
-								<input type="text" class="contact-text-input" />
+								<input type="text" class="contact-text-input input-name" minlength="4" />
 							</div>
 							<div class="form-content">
 								<label class="contact-label">Email</label>
-								<input type="text" class="contact-text-input" />
+								<input type="email" class="contact-text-input input-email" minlength="10" />
 							</div>
 							<div class="form-content">
 								<label class="contact-label">Message</label>
-								<textarea class="contact-textarea" name="message" rows="5" cols="33"></textarea>
+								<textarea
+									class="contact-textarea"
+									name="message"
+									rows="5"
+									cols="33"
+									minlength="12"
+								></textarea>
 							</div>
 							<div class="form-submit">
 								<button type="submit" class="form-submit-btn">Submit</button>
