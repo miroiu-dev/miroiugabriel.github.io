@@ -319,6 +319,10 @@ nav {
 	min-height: 48px;
 }
 
+.skill-svg img {
+	width: 48px;
+}
+
 .skill-title {
 	width: 100%;
 	justify-content: center;
