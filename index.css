@@ -194,19 +194,10 @@ nav {
 }
 
 .home-subtitle {
-	position: relative;
-	top: 50%;
-
-	width: 24rem;
 	margin: 0 auto;
-	border-right: 2px solid rgba(255, 255, 255, 0.75);
-	text-align: center;
-	white-space: nowrap;
-	overflow: hidden;
 	letter-spacing: -0.025em;
 	color: rgba(22, 30, 46, 1);
 	font-size: 2.5rem;
-	transform: translateY(-50%);
 }
 
 #about {
@@ -399,11 +390,13 @@ nav {
 	justify-content: center;
 	align-items: center;
 	border-radius: 7px;
+	visibility: hidden;
 }
 
 .projects-content:hover .overlay {
 	background-color: rgba(0, 0, 0, 0.7);
 	opacity: 1;
+	visibility: visible;
 }
 
 .overlay button {
@@ -597,6 +590,20 @@ footer {
 		transform: scale(1);
 	}
 }
+
+@media only screen and (min-width: 2360px) {
+	#home {
+		padding-top: 25rem;
+		padding-bottom: 10rem;
+	}
+	.home-title {
+		font-size: 6.5rem;
+	}
+	.home-subtitle {
+		font-size: 4rem;
+	}
+}
+
 @media only screen and (max-width: 1270px) {
 	.projects-bottom {
 		display: none;
@@ -627,9 +634,20 @@ footer {
 	}
 }
 
+@media (max-width: 920px) and (max-height: 420px) {
+	.navbar {
+		display: none;
+	}
+	#home {
+		padding-top: 5rem;
+	}
+	#about {
+		padding-top: 0;
+	}
+}
 @media only screen and (max-width: 720px) {
 	#home {
-		padding-top: 1.3rem;
+		padding-top: 7rem;
 	}
 	#about {
 		padding-top: 1rem;
@@ -672,7 +690,6 @@ footer {
 }
 @media only screen and (max-width: 390px) {
 	.home-subtitle {
-		width: 19.5rem;
 		font-size: 2rem;
 	}
 	.overlay h1 {
@@ -683,16 +700,14 @@ footer {
 		font-size: 1.9rem;
 	}
 }
-@media only screen and (min-width: 2360px) {
-	#home {
-		padding-top: 25rem;
-		padding-bottom: 10rem;
-	}
+@media only screen and (min-width: 280px) {
 	.home-title {
-		font-size: 6.5rem;
+		font-size: 4rem;
 	}
 	.home-subtitle {
-		font-size: 4rem;
-		width: 28rem;
+		font-size: 2rem;
+	}
+	.contact-logo-svg {
+		min-width: 100px !important;
 	}
 }
