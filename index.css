@@ -442,10 +442,6 @@ footer {
 	padding: 1rem;
 }
 
-.contact-logo-svg {
-	margin-left: 5rem;
-}
-
 .contact-otherwise-container {
 	width: 100%;
 }
@@ -573,8 +569,11 @@ footer {
 	width: 100%;
 	margin-bottom: 1.5rem;
 }
+
 .contact-logo-svg {
 	transition: transform 1s;
+	margin-left: 5rem;
+	min-width: 130px;
 }
 .contact-logo-svg:hover {
 	transform: scale(1.3);
