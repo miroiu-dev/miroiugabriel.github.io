@@ -690,16 +690,6 @@ footer {
 	.home-subtitle {
 		font-size: 1.9rem;
 	}
-	@keyframes typewriter {
-		from {
-			width: 0;
-			visibility: hidden;
-		}
-		to {
-			width: 19rem;
-			visibility: visible;
-		}
-	}
 }
 @media only screen and (min-width: 2360px) {
 	#home {
@@ -712,15 +702,5 @@ footer {
 	.home-subtitle {
 		font-size: 4rem;
 		width: 28rem;
-	}
-	@keyframes typewriter {
-		from {
-			width: 0;
-			visibility: hidden;
-		}
-		to {
-			width: 40rem;
-			visibility: visible;
-		}
 	}
 }
