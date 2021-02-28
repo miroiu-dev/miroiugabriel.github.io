@@ -80,6 +80,7 @@ const contactForm = document.querySelector('.contact-form');
 const nameInput = document.querySelector('.input-name');
 const emailInput = document.querySelector('.input-email');
 const messageInput = document.querySelector('.contact-textarea');
+
 contactForm.addEventListener('submit', e => {
 	e.preventDefault();
 	if (nameInput.value && emailInput.value && messageInput.value) {
