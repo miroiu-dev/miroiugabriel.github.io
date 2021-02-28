@@ -564,7 +564,6 @@ footer {
 	width: fit-content;
 	margin: 0 auto;
 	font-size: 1rem;
-	/* opacity: 0.7; */
 	font-weight: 400;
 }
 
@@ -595,16 +594,6 @@ footer {
 		transform: scale(1);
 	}
 }
-
-@keyframes in-out {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
 @media only screen and (max-width: 1270px) {
 	.projects-bottom {
 		display: none;
