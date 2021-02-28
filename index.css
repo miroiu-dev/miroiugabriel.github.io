@@ -709,15 +709,15 @@ footer {
 	.overlay h1 {
 		font-size: 1.8rem;
 	}
-	.anim-typewriter {
-		animation: typewriter 2.5s steps(44) 0.5s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
-	}
+
 	@keyframes typewriter {
 		from {
 			width: 0;
+			visibility: hidden;
 		}
 		to {
-			width: 19.5rem;
+			width: 20rem;
+			visibility: visible;
 		}
 	}
 }
