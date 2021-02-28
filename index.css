@@ -367,7 +367,10 @@ nav {
 	max-width: 720px;
 	visibility: hidden;
 }
-
+.projects-content-carousel {
+	position: relative;
+	max-width: 720px;
+}
 .image {
 	display: block;
 	width: 100%;
@@ -398,7 +401,11 @@ nav {
 	opacity: 1;
 	visibility: visible;
 }
-
+.projects-content-carousel:hover .overlay {
+	background-color: rgba(0, 0, 0, 0.7);
+	opacity: 1;
+	visibility: visible;
+}
 .overlay button {
 	text-decoration: none;
 	color: #fff;
