@@ -74,7 +74,16 @@ sections.forEach(section => observer.observe(section));
 
 scrollToReveal(document.querySelectorAll('.skill-title h2'), 'reveal', 200);
 scrollToReveal(document.querySelectorAll('.projects-content'), 'reveal', 200);
-scrollToReveal(document.querySelectorAll('.home-subtitle'), 'anim-typewriter');
+
+if (window.innerWidth > 500 && window.innerHeight > 100) {
+	var app = document.querySelector('.home-subtitle');
+
+	var typewriter = new Typewriter(app, {
+		loop: true,
+	});
+
+	typewriter.typeString("Let's Create it Together").pauseFor(2500).start();
+}
 
 const contactForm = document.querySelector('.contact-form');
 const nameInput = document.querySelector('.input-name');

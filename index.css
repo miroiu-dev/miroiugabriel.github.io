@@ -207,29 +207,6 @@ nav {
 	color: rgba(22, 30, 46, 1);
 	font-size: 2.5rem;
 	transform: translateY(-50%);
-	visibility: hidden;
-}
-
-.anim-typewriter {
-	animation: typewriter 2.5s steps(44) 0.5s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
-}
-@keyframes typewriter {
-	from {
-		width: 0;
-		visibility: hidden;
-	}
-	to {
-		width: 24rem;
-		visibility: visible;
-	}
-}
-@keyframes blinkTextCursor {
-	from {
-		border-right-color: rgba(88, 80, 236, 0.75);
-	}
-	to {
-		border-right-color: transparent;
-	}
 }
 
 #about {
