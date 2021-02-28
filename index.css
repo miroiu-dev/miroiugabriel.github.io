@@ -608,11 +608,6 @@ footer {
 	.footer-content {
 		grid-template-columns: 1fr;
 	}
-
-	/* .splide {
-		display: block;
-		margin-top: 10rem;
-	} */
 	.projects-content {
 		max-width: 1440px;
 		margin: 0 auto;
