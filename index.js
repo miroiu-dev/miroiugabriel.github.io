@@ -70,10 +70,15 @@ const handleIntersect = entries => {
 };
 
 const observer = new IntersectionObserver(handleIntersect, options);
+
 sections.forEach(section => observer.observe(section));
 
-scrollToReveal(document.querySelectorAll('.skill-title h2'), 'reveal', 200);
-scrollToReveal(document.querySelectorAll('.projects-content'), 'reveal', 200);
+const arr = [];
+
+document.querySelectorAll('.skill-title h2').forEach(item => arr.push(item));
+document.querySelectorAll('.projects-content').forEach(item => arr.push(item));
+
+scrollToReveal(arr, 'reveal', 200);
 
 const contactForm = document.querySelector('.contact-form');
 const nameInput = document.querySelector('.input-name');
