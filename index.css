@@ -710,13 +710,16 @@ footer {
 		font-size: 1.8rem;
 	}
 
+	.home-subtitle {
+		font-size: 1.9rem;
+	}
 	@keyframes typewriter {
 		from {
 			width: 0;
 			visibility: hidden;
 		}
 		to {
-			width: 20rem;
+			width: 19rem;
 			visibility: visible;
 		}
 	}
