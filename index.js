@@ -19,7 +19,10 @@ const scrollToReveal = (
 			if (entry.isIntersecting) {
 				const revealItem = entry.target;
 				if (delay) {
-					setTimeout(() => revealItem.classList.add(animation), delay);
+					setTimeout(
+						() => revealItem.classList.add(animation),
+						delay
+					);
 				} else {
 					revealItem.classList.add(animation);
 				}
