@@ -177,7 +177,7 @@ nav {
 	text-decoration: none;
 	color: #fff;
 	font-size: 1.4rem;
-	font-weight: 600;
+	font-weight: 500;
 	padding: 1.5rem 2rem;
 	border-radius: 9999px;
 	outline: none;
@@ -557,6 +557,7 @@ footer {
 	border: none;
 	background-color: #5850ec;
 	cursor: pointer;
+	transition: 200ms;
 }
 .form-submit-btn:hover {
 	background-color: rgb(88, 80, 236, 0.9);
