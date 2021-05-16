@@ -37,9 +37,12 @@
 		<meta name="theme-color" content="#ffffff" />
 
 		<link rel="stylesheet" href="/index.css" />
-		<script src="index.js" defer></script>
+		<script src="loader.js"></script>
 	</head>
-	<body>
+	<body class="loading">
+		<div class="loader-wrapper">
+			<div class="loader">Loading...</div>
+		</div>
 		<nav class="navbar" aria-label="main navigation">
 			<div class="navbar-container">
 				<a href="#home" class="home-nav-item">Home</a>
@@ -475,5 +478,6 @@
 				</div>
 			</footer>
 		</section>
+		<script src="index.js" defer></script>
 	</body>
 </html>
