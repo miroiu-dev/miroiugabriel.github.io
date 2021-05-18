@@ -36,6 +36,14 @@ const scrollToReveal = (
 
 //code
 
+const age = document.getElementById('age');
+const date = new Date();
+const year = date.getFullYear();
+const month = date.getMonth() + 1;
+console.log(month);
+const myAge = year - 2003 - (month <= 9);
+age.textContent = myAge;
+
 const navItems = {
 	home: selectElementByClass('home-nav-item'),
 	about: selectElementByClass('about-nav-item'),
