@@ -41,7 +41,7 @@ const date = new Date();
 const year = date.getFullYear();
 const month = date.getMonth() + 1;
 console.log(month);
-const myAge = year - 2003 - (month <= 9);
+const myAge = year - 2003 - (month <= 11);
 age.textContent = myAge;
 
 const navItems = {
