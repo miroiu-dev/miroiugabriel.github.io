@@ -61,13 +61,15 @@ const sections = [
 const options = {
 	root: null,
 	rootMargin: '0px',
-	threshold: 0.5,
+	threshold: 0.4,
 };
 
 const handleIntersect = entries => {
 	entries.forEach(entry => {
 		if (entry.isIntersecting) {
+			console.log(entry.isIntersecting);
 			const navItem = navItems[entry.target.id];
+			console.log(navItem);
 			navItem.classList.add('active');
 			const hash = '#' + entry.target.id;
 			history.pushState({}, window.title, hash);
