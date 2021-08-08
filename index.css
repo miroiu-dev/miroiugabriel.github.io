@@ -769,6 +769,12 @@ footer {
 	}
 }
 
+@media (max-width: 1270px) {
+	.navbar {
+		display: none;
+	}
+}
+
 @media (max-width: 920px) and (max-height: 420px) {
 	.navbar {
 		display: none;
