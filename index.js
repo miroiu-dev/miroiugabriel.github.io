@@ -40,8 +40,9 @@ const age = document.getElementById('age');
 const date = new Date();
 const year = date.getFullYear();
 const month = date.getMonth() + 1;
-console.log(month);
-const myAge = year - 2003 - (month <= 11);
+
+const myAge = year - 2003 - (month < 11);
+
 age.textContent = myAge;
 
 const navItems = {
@@ -67,9 +68,7 @@ const options = {
 const handleIntersect = entries => {
 	entries.forEach(entry => {
 		if (entry.isIntersecting) {
-			console.log(entry.isIntersecting);
 			const navItem = navItems[entry.target.id];
-			console.log(navItem);
 			navItem.classList.add('active');
 			const hash = '#' + entry.target.id;
 			history.pushState({}, window.title, hash);
